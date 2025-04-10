@@ -53,7 +53,12 @@ SPECIAL files
 -> loading.jsx
 -> error.jsx
 
-//start from video 25
+ERROR BOUNDARY
+-> created using error.jsx file
+-> must be a client component
+-> error.jsx wraps the route segments and their nested children in react error boundary
+-> it comes with "reset" prop that works only for client components
+-> to attempt reset on server side, we need to use startTransition from react and useRouter() from next.jsx
 
 
 
