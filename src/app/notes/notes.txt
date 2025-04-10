@@ -1,0 +1,59 @@
+PAGES
+-> route specific UI components
+
+Private Folders
+-> to make  a folder private, start it's name with underscore 
+-> for example, we can create a _lib folder under app folder to keep our utility functions 
+
+ROUTE GROUPS
+-> allow us to logically organize project files andd routes without impacting url structure
+-> for this we  can wrap parentheses () around the folder name 
+-> allow us to selectively apply layouts to specific parts of our app
+
+LAYOUT
+-> common UI which is shared among multiple pages in the app
+
+METADATA RULES
+-> both layout.jsx and page.jsx can export metadata. layout.jsx applies metadata to all of its pages and page.jsx applies metadata only to the specific page
+
+-> does not work in pages having "use client";
+
+<Link href="/login" replace>About</Link>
+
+PARAMS AND SEARCHPARAMS
+
+-> by default available only in server components since async await can be used only in server components
+
+-> to use params and searchParams in client components, wrap the awaited values in a use() hook
+
+-> params: available in page.jsx as well as layout.jsx
+-> searchParams: available only in page.jsx
+
+HOOKS
+-> usePathname()
+-> use()
+-> useRouter() //for programatic navigation
+
+TEMPLATES
+-> similar to layout as in they are also UI shared across multiple pages
+-> the difference is whenever a user navigates b/w routes sharing a template, we get a complete fresh start
+
+1) a new template component instance is mounted
+2) DOM elements are recreated
+3) state is cleared
+4) effects are resynchronized
+
+-> for demo, we can rename layout.jsx file in auth folder as template.jsx
+
+SPECIAL files
+-> page.jsx
+-> layout.jsx
+-> template.jsx
+-> not-found.jsx
+-> loading.jsx
+-> error.jsx
+
+//start from video 25
+
+
+
