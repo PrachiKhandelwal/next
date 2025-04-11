@@ -59,6 +59,9 @@ ERROR BOUNDARY
 -> error.jsx wraps the route segments and their nested children in react error boundary
 -> it comes with "reset" prop that works only for client components
 -> to attempt reset on server side, we need to use startTransition from react and useRouter() from next.jsx
+-> it DOES NOT CATCH ERROR in layout.jsx 
+-> error.jsx does not handle error in a layout which is in same folder as layout.jsx, so we need to move error.tsx to layout.jsx's parent segments
 
+THEN THE QUESTION ARISES HOW TO HANDLE ERRORS FOR  Root Layout => ANSWER IS using global-error.jsx
 
 
