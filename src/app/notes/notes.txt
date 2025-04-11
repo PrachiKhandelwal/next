@@ -62,6 +62,6 @@ ERROR BOUNDARY
 -> it DOES NOT CATCH ERROR in layout.jsx 
 -> error.jsx does not handle error in a layout which is in same folder as layout.jsx, so we need to move error.tsx to layout.jsx's parent segments
 
-THEN THE QUESTION ARISES HOW TO HANDLE ERRORS FOR  Root Layout => ANSWER IS using global-error.jsx
+THEN THE QUESTION ARISES HOW TO HANDLE ERRORS FOR  Root Layout => ANSWER IS using global-error.js and error-wrapper.jsx. This works only in production mode.  
 
 
